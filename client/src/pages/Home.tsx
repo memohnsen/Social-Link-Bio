@@ -75,7 +75,7 @@ export default function Home() {
               className="flex justify-center mb-6"
             >
               <Avatar className="w-24 h-24 border-4 border-white shadow-lg ring-2 ring-purple-500/20">
-                <AvatarImage src="https://i.pravatar.cc/200" alt="Profile" />
+                <AvatarImage src="/IMG_0080.JPG" alt="Profile" />
                 <AvatarFallback>ME</AvatarFallback>
               </Avatar>
             </motion.div>
