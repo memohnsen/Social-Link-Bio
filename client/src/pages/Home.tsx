@@ -82,7 +82,7 @@ export default function Home() {
               className="flex justify-center mb-6"
             >
               <Avatar className="w-24 h-24 border-4 border-white shadow-lg ring-2 ring-[#897D27]/20">
-                <AvatarImage src="/assets/IMG_0080.JPG" alt="Profile" />
+                <AvatarImage src="/assets/profile.jpg" alt="Profile" />
                 <AvatarFallback>ME</AvatarFallback>
               </Avatar>
             </motion.div>
