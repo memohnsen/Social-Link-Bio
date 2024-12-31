@@ -2,6 +2,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import LinkCard from "@/components/LinkCard";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 import { 
   SiGithub, 
   SiX,
