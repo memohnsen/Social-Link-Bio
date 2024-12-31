@@ -18,12 +18,6 @@ const links = [
     color: "text-gray-700 hover:text-[#897D27]"
   },
   {
-    title: "GitHub",
-    url: "https://github.com/yourusername",
-    icon: <SiGithub className="w-6 h-6" />,
-    color: "text-gray-700 hover:text-gray-900"
-  },
-  {
     title: "X (Twitter)",
     url: "https://x.com/yourusername",
     icon: <SiX className="w-6 h-6" />,
