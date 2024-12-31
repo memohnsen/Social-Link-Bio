@@ -99,35 +99,43 @@ export default function Home() {
               variants={container}
               initial="hidden"
               animate="show"
-              className="space-y-4"
+              className="space-y-6"
             >
-              <motion.button
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  show: { opacity: 1, y: 0 }
-                }}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
-                onClick={() => window.open("https://wl-wargames.com", "_blank")}
-              >
-                <img src="../../assets/wargames.jpeg" alt="War Games" className="w-5 h-5 rounded" />
-                <span className="font-medium">War Games</span>
-              </motion.button>
+              {/* Coaching Section */}
+              <div className="space-y-3">
+                <h2 className="text-lg font-semibold text-gray-700">Coaching</h2>
+                <motion.button
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    show: { opacity: 1, y: 0 }
+                  }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
+                  onClick={() => window.open("https://tr.ee/Z9EbnnhbUB", "_blank")}
+                >
+                  <SiGithub className="w-5 h-5" />
+                  <span className="font-medium">Power & Grace Performance</span>
+                </motion.button>
+              </div>
 
-              <motion.button
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  show: { opacity: 1, y: 0 }
-                }}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
-                onClick={() => window.open("https://tr.ee/Z9EbnnhbUB", "_blank")}
-              >
-                <SiGithub className="w-5 h-5" />
-                <span className="font-medium">Power & Grace Performance</span>
-              </motion.button>
+              {/* Projects Section */}
+              <div className="space-y-3">
+                <h2 className="text-lg font-semibold text-gray-700">Projects</h2>
+                <motion.button
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    show: { opacity: 1, y: 0 }
+                  }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
+                  onClick={() => window.open("https://wl-wargames.com", "_blank")}
+                >
+                  <img src="../../assets/wargames.jpeg" alt="War Games" className="w-5 h-5 rounded" />
+                  <span className="font-medium">War Games</span>
+                </motion.button>
+              </div>
               
               <motion.div className="flex justify-center gap-6 mt-8">
                 {links.slice(1).map((link) => (
