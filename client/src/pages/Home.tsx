@@ -13,26 +13,26 @@ const links = [
   {
     title: "GitHub",
     url: "https://github.com/yourusername",
-    icon: <SiGithub className="w-5 h-5" />,
-    color: "hover:bg-gray-900 hover:text-white"
+    icon: <SiGithub className="w-6 h-6" />,
+    color: "text-gray-700 hover:text-gray-900"
   },
   {
     title: "X (Twitter)",
     url: "https://x.com/yourusername",
-    icon: <SiX className="w-5 h-5" />,
-    color: "hover:bg-black hover:text-white"
+    icon: <SiX className="w-6 h-6" />,
+    color: "text-gray-700 hover:text-black"
   },
   {
     title: "LinkedIn",
     url: "https://linkedin.com/in/yourusername",
-    icon: <SiLinkedin className="w-5 h-5" />,
-    color: "hover:bg-blue-600 hover:text-white"
+    icon: <SiLinkedin className="w-6 h-6" />,
+    color: "text-gray-700 hover:text-blue-600"
   },
   {
     title: "Instagram",
     url: "https://instagram.com/yourusername",
-    icon: <SiInstagram className="w-5 h-5" />,
-    color: "hover:bg-pink-500 hover:text-white"
+    icon: <SiInstagram className="w-6 h-6" />,
+    color: "text-gray-700 hover:text-pink-500"
   }
 ];
 
@@ -98,16 +98,23 @@ export default function Home() {
               variants={container}
               initial="hidden"
               animate="show"
-              className="space-y-4"
+              className="flex justify-center gap-6 mt-8"
             >
               {links.map((link) => (
-                <LinkCard 
+                <motion.a
                   key={link.title}
-                  title={link.title}
-                  url={link.url}
-                  icon={link.icon}
-                  color={link.color}
-                />
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(
+                    "p-2 rounded-full transition-colors",
+                    link.color
+                  )}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {link.icon}
+                </motion.a>
               ))}
             </motion.div>
           </CardContent>
