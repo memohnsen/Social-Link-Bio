@@ -111,7 +111,7 @@ export default function Home() {
                 className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
                 onClick={() => window.open("https://wl-wargames.com", "_blank")}
               >
-                <SiGithub className="w-5 h-5" />
+                <img src="/assets/wargames.jpeg" alt="War Games" className="w-5 h-5 rounded" />
                 <span className="font-medium">War Games</span>
               </motion.button>
 
