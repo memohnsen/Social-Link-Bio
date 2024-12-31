@@ -129,6 +129,20 @@ export default function Home() {
                   <MdComputer className="w-5 h-5 rounded" />
                   <span className="font-medium">War Games</span>
                 </motion.button>
+
+                <motion.button
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    show: { opacity: 1, y: 0 }
+                  }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
+                  onClick={() => window.open("https://apolytos.co", "_blank")}
+                >
+                  <MdComputer className="w-5 h-5 rounded" />
+                  <span className="font-medium">Apolytos</span>
+                </motion.button>
               </div>
               
               <motion.div className="flex justify-center gap-6 mt-8">
