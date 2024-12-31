@@ -3,10 +3,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import LinkCard from "@/components/LinkCard";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { GiWeightLiftingUp } from "react-icons/gi";
+import { MdComputer } from "react-icons/md";
 import { 
-  SiGithub, 
   SiX,
-  SiLinkedin, 
   SiInstagram 
 } from "react-icons/si";
 
@@ -14,24 +14,18 @@ const links = [
   {
     title: "War Games",
     url: "https://wl-wargames.com",
-    icon: <SiGithub className="w-6 h-6" />,
+    icon: <MdComputer className="w-6 h-6" />,
     color: "text-gray-700 hover:text-[#897D27]"
   },
   {
     title: "X (Twitter)",
-    url: "https://x.com/yourusername",
+    url: "https://x.com/maddisenmohnsen",
     icon: <SiX className="w-6 h-6" />,
     color: "text-gray-700 hover:text-black"
   },
   {
-    title: "LinkedIn",
-    url: "https://linkedin.com/in/yourusername",
-    icon: <SiLinkedin className="w-6 h-6" />,
-    color: "text-gray-700 hover:text-blue-600"
-  },
-  {
     title: "Instagram",
-    url: "https://instagram.com/yourusername",
+    url: "https://instagram.com/coachmohnsen",
     icon: <SiInstagram className="w-6 h-6" />,
     color: "text-gray-700 hover:text-pink-500"
   }
@@ -112,9 +106,9 @@ export default function Home() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
-                  onClick={() => window.open("https://tr.ee/Z9EbnnhbUB", "_blank")}
+                  onClick={() => window.open("https://powerandgraceperformance.com/", "_blank")}
                 >
-                  <SiGithub className="w-5 h-5" />
+                  <GiWeightLiftingUp className="w-5 h-5" />
                   <span className="font-medium">Power & Grace Performance</span>
                 </motion.button>
               </div>
@@ -132,7 +126,7 @@ export default function Home() {
                   className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
                   onClick={() => window.open("https://wl-wargames.com", "_blank")}
                 >
-                  <img src="../../assets/wargames.jpeg" alt="War Games" className="w-5 h-5 rounded" />
+                  <MdComputer className="w-5 h-5 rounded" />
                   <span className="font-medium">War Games</span>
                 </motion.button>
               </div>
