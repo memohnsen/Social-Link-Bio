@@ -75,7 +75,7 @@ export default function Home() {
               className="flex justify-center mb-6"
             >
               <Avatar className="w-24 h-24 border-4 border-white shadow-lg ring-2 ring-purple-500/20">
-                <AvatarImage src="/IMG_0080.JPG" alt="Profile" />
+                <AvatarImage src="/assets/IMG_0080.JPG" alt="Profile" />
                 <AvatarFallback>ME</AvatarFallback>
               </Avatar>
             </motion.div>
@@ -87,10 +87,10 @@ export default function Home() {
               className="text-center mb-8"
             >
               <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-2">
-                Your Name
+                Maddisen Mohnsen
               </h1>
               <p className="text-gray-600 mt-2">
-                Digital creator & developer
+                MBA, CSCS, USAW L3 National Coach
               </p>
             </motion.div>
 
