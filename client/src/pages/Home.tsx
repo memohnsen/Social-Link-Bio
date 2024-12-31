@@ -4,6 +4,7 @@ import LinkCard from "@/components/LinkCard";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { GiWeightLiftingUp, GiTakeMyMoney } from "react-icons/gi";
+import profileImg from "../assets/IMG_9955.jpg";
 import { MdComputer, MdMessage } from "react-icons/md";
 import { 
   SiX,
@@ -70,7 +71,7 @@ export default function Home() {
               className="flex justify-center mb-6"
             >
               <Avatar className="w-32 h-32 border-4 border-white shadow-lg ring-2 ring-[#897D27]/20">
-                <AvatarImage src="/client/public/assets/IMG_9955.jpg" alt="Profile" />
+                <AvatarImage src={profileImg} alt="Profile" />
                 <AvatarFallback>ME</AvatarFallback>
               </Avatar>
             </motion.div>
