@@ -50,13 +50,13 @@ export default function Home() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Animated background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 animate-gradient" />
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 animate-gradient" />
 
       {/* Floating orbs animation */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#897D27]/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gray-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-[#897D27]/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" />
       </div>
 
       {/* Content */}
@@ -74,7 +74,7 @@ export default function Home() {
               }}
               className="flex justify-center mb-6"
             >
-              <Avatar className="w-24 h-24 border-4 border-white shadow-lg ring-2 ring-purple-500/20">
+              <Avatar className="w-24 h-24 border-4 border-white shadow-lg ring-2 ring-[#897D27]/20">
                 <AvatarImage src="/assets/IMG_0080.JPG" alt="Profile" />
                 <AvatarFallback>ME</AvatarFallback>
               </Avatar>
@@ -86,7 +86,7 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="text-center mb-8"
             >
-              <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-2">
+              <h1 className="text-3xl font-bold bg-gradient-to-r from-gray-700 via-[#897D27] to-gray-700 bg-clip-text text-transparent mb-2">
                 Maddisen Mohnsen
               </h1>
               <p className="text-gray-600 mt-2">
