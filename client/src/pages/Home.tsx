@@ -4,7 +4,7 @@ import LinkCard from "@/components/LinkCard";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { GiWeightLiftingUp, GiTakeMyMoney } from "react-icons/gi";
-import { MdComputer } from "react-icons/md";
+import { MdComputer, MdMessage } from "react-icons/md";
 import { 
   SiX,
   SiInstagram 
@@ -111,6 +111,20 @@ export default function Home() {
                   <GiWeightLiftingUp className="w-5 h-5" />
                   <span className="font-medium">Power & Grace Performance</span>
                 </motion.button>
+
+                <motion.button
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    show: { opacity: 1, y: 0 }
+                  }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
+                  onClick={() => window.open("https://wa.me/message/LTZ6GYOGBRGPJ1")}
+                >
+                  <MdMessage className="w-5 h-5" />
+                  <span className="font-medium">Learn More About 1-1 Coaching</span>
+                </motion.button>
               </div>
 
               {/* Projects Section */}
@@ -129,7 +143,8 @@ export default function Home() {
                   <MdComputer className="w-5 h-5 rounded" />
                   <span className="font-medium">War Games: Elevate Your Coaching</span>
                 </motion.button>
-
+                
+                {/* Not Ready
                 <motion.button
                   variants={{
                     hidden: { opacity: 0, y: 20 },
@@ -143,8 +158,9 @@ export default function Home() {
                   <GiTakeMyMoney className="w-5 h-5 rounded" />
                   <span className="font-medium">Apolytos: Simple Expense Tracking</span>
                 </motion.button>
+                 */}
               </div>
-              
+                
               <motion.div className="flex justify-center gap-6 mt-8">
                 {links.slice(1).map((link) => (
                   <motion.a
