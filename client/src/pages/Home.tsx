@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import LinkCard from "@/components/LinkCard";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { GiWeightLiftingUp } from "react-icons/gi";
+import { GiWeightLiftingUp, GiTakeMyMoney } from "react-icons/gi";
 import { MdComputer } from "react-icons/md";
 import { 
   SiX,
@@ -127,7 +127,7 @@ export default function Home() {
                   onClick={() => window.open("https://wl-wargames.com", "_blank")}
                 >
                   <MdComputer className="w-5 h-5 rounded" />
-                  <span className="font-medium">War Games</span>
+                  <span className="font-medium">War Games: Elevate Your Coaching</span>
                 </motion.button>
 
                 <motion.button
@@ -140,8 +140,8 @@ export default function Home() {
                   className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
                   onClick={() => window.open("https://apolytos.co", "_blank")}
                 >
-                  <MdComputer className="w-5 h-5 rounded" />
-                  <span className="font-medium">Apolytos</span>
+                  <GiTakeMyMoney className="w-5 h-5 rounded" />
+                  <span className="font-medium">Apolytos: Simple Expense Tracking</span>
                 </motion.button>
               </div>
               
