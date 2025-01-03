@@ -3,33 +3,34 @@ import { Card, CardContent } from "@/components/ui/card";
 import LinkCard from "@/components/LinkCard";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { GiWeightLiftingUp, GiTakeMyMoney } from "react-icons/gi";
+import {
+  GiWeightLiftingUp,
+  GiTakeMyMoney,
+  GiFireworkRocket,
+} from "react-icons/gi";
 import profileImg from "../assets/IMG_9955.jpg";
 import { MdComputer, MdMessage } from "react-icons/md";
-import { 
-  SiX,
-  SiInstagram 
-} from "react-icons/si";
+import { SiX, SiInstagram } from "react-icons/si";
 
 const links = [
   {
     title: "War Games",
     url: "https://wl-wargames.com",
     icon: <MdComputer className="w-6 h-6" />,
-    color: "text-gray-700 hover:text-[#897D27]"
+    color: "text-gray-700 hover:text-[#897D27]",
   },
   {
     title: "X (Twitter)",
     url: "https://x.com/maddisenmohnsen",
     icon: <SiX className="w-6 h-6" />,
-    color: "text-gray-700 hover:text-black"
+    color: "text-gray-700 hover:text-black",
   },
   {
     title: "Instagram",
     url: "https://instagram.com/coachmohnsen",
     icon: <SiInstagram className="w-6 h-6" />,
-    color: "text-gray-700 hover:text-pink-500"
-  }
+    color: "text-gray-700 hover:text-pink-500",
+  },
 ];
 
 export default function Home() {
@@ -38,9 +39,9 @@ export default function Home() {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   return (
@@ -59,14 +60,14 @@ export default function Home() {
       <div className="relative py-12 px-4">
         <Card className="max-w-md mx-auto bg-white/80 backdrop-blur-sm border-0 shadow-xl">
           <CardContent className="pt-6">
-            <motion.div 
+            <motion.div
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
-              transition={{ 
-                type: "spring", 
-                stiffness: 200, 
+              transition={{
+                type: "spring",
+                stiffness: 200,
                 damping: 20,
-                duration: 0.8 
+                duration: 0.8,
               }}
               className="flex justify-center mb-6"
             >
@@ -98,16 +99,23 @@ export default function Home() {
             >
               {/* Coaching Section */}
               <div className="space-y-3">
-                <h2 className="text-lg font-semibold text-gray-700">Coaching</h2>
+                <h2 className="text-lg font-semibold text-gray-700">
+                  Coaching
+                </h2>
                 <motion.button
                   variants={{
                     hidden: { opacity: 0, y: 20 },
-                    show: { opacity: 1, y: 0 }
+                    show: { opacity: 1, y: 0 },
                   }}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
-                  onClick={() => window.open("https://powerandgraceperformance.com/", "_blank")}
+                  onClick={() =>
+                    window.open(
+                      "https://powerandgraceperformance.com/",
+                      "_blank",
+                    )
+                  }
                 >
                   <GiWeightLiftingUp className="w-5 h-5" />
                   <span className="font-medium">Power & Grace Performance</span>
@@ -116,35 +124,62 @@ export default function Home() {
                 <motion.button
                   variants={{
                     hidden: { opacity: 0, y: 20 },
-                    show: { opacity: 1, y: 0 }
+                    show: { opacity: 1, y: 0 },
                   }}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
-                  onClick={() => window.open("https://wa.me/message/LTZ6GYOGBRGPJ1")}
+                  onClick={() =>
+                    window.open("https://wa.me/message/LTZ6GYOGBRGPJ1")
+                  }
                 >
                   <MdMessage className="w-5 h-5" />
-                  <span className="font-medium">Learn More About 1-1 Coaching</span>
+                  <span className="font-medium">
+                    Learn More About 1-1 Coaching
+                  </span>
                 </motion.button>
               </div>
 
               {/* Projects Section */}
               <div className="space-y-3">
-                <h2 className="text-lg font-semibold text-gray-700">Projects</h2>
+                <h2 className="text-lg font-semibold text-gray-700">
+                  Projects
+                </h2>
                 <motion.button
                   variants={{
                     hidden: { opacity: 0, y: 20 },
-                    show: { opacity: 1, y: 0 }
+                    show: { opacity: 1, y: 0 },
                   }}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
-                  onClick={() => window.open("https://wl-wargames.com", "_blank")}
+                  onClick={() =>
+                    window.open("https://wl-wargames.com", "_blank")
+                  }
                 >
                   <MdComputer className="w-5 h-5 rounded" />
-                  <span className="font-medium">War Games: Elevate Your Coaching</span>
+                  <span className="font-medium">
+                    War Games: Elevate Your Coaching
+                  </span>
                 </motion.button>
-                
+                <motion.button
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    show: { opacity: 1, y: 0 },
+                  }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
+                  onClick={() =>
+                    window.open("https://wl-wargames.com/wrapped", "_blank")
+                  }
+                >
+                  <GiFireworkRocket className="w-5 h-5 rounded" />
+                  <span className="font-medium">
+                    2024 Weightlifting Wrapped
+                  </span>
+                </motion.button>
+
                 {/* Not Ready
                 <motion.button
                   variants={{
@@ -161,7 +196,7 @@ export default function Home() {
                 </motion.button>
                  */}
               </div>
-                
+
               <motion.div className="flex justify-center gap-6 mt-8">
                 {links.slice(1).map((link) => (
                   <motion.a
@@ -171,7 +206,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className={cn(
                       "p-2 rounded-full transition-colors",
-                      link.color
+                      link.color,
                     )}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
