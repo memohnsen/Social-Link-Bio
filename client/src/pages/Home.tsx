@@ -7,6 +7,7 @@ import {
   GiWeightLiftingUp,
   GiTakeMyMoney,
   GiFireworkRocket,
+  GiRollingDices,
 } from "react-icons/gi";
 import profileImg from "../assets/IMG_9955.jpg";
 import { MdComputer, MdMessage } from "react-icons/md";
@@ -180,7 +181,6 @@ export default function Home() {
                   </span>
                 </motion.button>
 
-                {/* Not Ready
                 <motion.button
                   variants={{
                     hidden: { opacity: 0, y: 20 },
@@ -189,12 +189,11 @@ export default function Home() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full p-4 rounded-lg border border-gray-200 flex items-center gap-3 transition-colors hover:bg-[#897D27]/10"
-                  onClick={() => window.open("https://apolytos.co", "_blank")}
+                  onClick={() => window.open("https://wl-wargames.com/dice", "_blank")}
                 >
-                  <GiTakeMyMoney className="w-5 h-5 rounded" />
-                  <span className="font-medium">Apolytos: Simple Expense Tracking</span>
+                  <GiRollingDices className="w-5 h-5 rounded" />
+                  <span className="font-medium">Competition Dice</span>
                 </motion.button>
-                 */}
               </div>
 
               <motion.div className="flex justify-center gap-6 mt-8">
